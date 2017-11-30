@@ -5,7 +5,7 @@ const {issueStore} = require('../models');
 router.get('/', function(req, res) {
   const openIssuesCount = issueStore.getAllOpen().length;
   res.render('dashboard', {
-          openIssuesCount: openIssuesCount
+  openIssuesCount: openIssuesCount
   });
 });
 
