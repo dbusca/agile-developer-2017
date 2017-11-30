@@ -13,7 +13,7 @@ describe('Dashboard', function() {
 
         cy.dataTest('high-gauge')
             .should('exist')
-            .should('contain', '50');
+            .should('contain', '100');
 
         cy.dataTest('add-issue').click();
         cy.field('title').type('New issue');
